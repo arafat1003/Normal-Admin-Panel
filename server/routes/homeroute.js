@@ -1,0 +1,15 @@
+const express= require("express")
+const { userControl,loginRouter, logOutrouter, UserInformation, loginUser, UpdateUser, UpdatePassword, resetPassword, forgetPassword } = require("../controllers/usercontrolller")
+const { authverified } = require("../middleware/authMiddleware")
+const homerouter=express.Router()
+homerouter.post("/hii",userControl)
+homerouter.post("/hii2",loginRouter)
+homerouter.get("/hii3",logOutrouter)
+homerouter.get("/hii4",authverified,UserInformation)
+homerouter.get("/hii5",authverified,loginUser)
+homerouter.patch("/hii6",authverified,UpdateUser)
+homerouter.patch("/hii7",authverified,UpdatePassword)
+homerouter.post("/resetpassword",resetPassword)
+homerouter.put("/forgotpassword/:hashToken",forgetPassword)
+module.exports=  homerouter
+  
