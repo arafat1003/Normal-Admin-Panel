@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(
   cors({
-    origin: [`${Url}`],
+    origin: ["http://localhost:3000", "https://admin-panel.vercel.app"],
     credentials: true,
   })
 );
