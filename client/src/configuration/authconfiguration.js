@@ -1,7 +1,8 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-
-const BackEND_URL = "http://localhost:5000";
+import "dotenv/config";
+const BackEND_URL = process.env.REACT_APP_URL;
+console.log(BackEND_URL);
 const api = axios.create({
   baseURL: BackEND_URL,
   withCredentials: true,

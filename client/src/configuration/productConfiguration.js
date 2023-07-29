@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const BackEND_URL = "http://localhost:5000";
+const BackEND_URL = process.env.REACT_APP_URL;
 
 const product_api = `${BackEND_URL}/v1/product/posting`;
 const All_product = `${BackEND_URL}/v1/product/allrouter`;

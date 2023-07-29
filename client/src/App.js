@@ -23,7 +23,7 @@ import SinglePro from "./component/Singleproducts/SinglePro";
 import ProductEdit from "./component/ProductEdit/productEdit";
 import ProfileDetails from "./component/Profile/ProfileDetails";
 import EditProfile from "./component/Profile/EditProfile";
-
+const dotenv = require("dotenv").config();
 axios.defaults.withCredentials = true;
 function App() {
   const dispatch = useDispatch();

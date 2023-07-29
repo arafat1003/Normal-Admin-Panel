@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "dompurify": "^3.0.5",
+    "dotenv": "^16.3.1",
     "env": "^0.0.2",
     "mui-tel-input": "^3.2.2",
     "node-sass": "^9.0.0",

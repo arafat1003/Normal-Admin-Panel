@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { useEffect } from "react";
-const name = JSON.parse(localStorage.getItem("name")) || "";
+// const storedName = localStorage.getItem("name");
+// const name =
+//   storedName && typeof storedName === "string" ? JSON.parse(storedName) : "";
 
 const initialState = {
   isLoggedIn: false,
-  name: name ? name : "",
+  name: "",
   user: {
     name: "",
     email: "",
